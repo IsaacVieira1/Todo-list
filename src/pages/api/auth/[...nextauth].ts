@@ -8,8 +8,7 @@ export const authOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     }),
   ],
-  secret: process.env.JWT_SECRET as string, 
-  debug: true, 
+  secret: process.env.JWT_SECRET as string,
 };
 
 export default NextAuth(authOptions);
